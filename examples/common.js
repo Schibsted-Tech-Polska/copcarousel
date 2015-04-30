@@ -90,10 +90,14 @@ function slideRender(slide, data) {
     image.onload = function () {
         image.style.visibility = '';
         image.style.maxHeight = '';
-        console.log(image.src);
     }
     //IE9 hack to fire onload
-    image.src = url;
+    setTimeout(function () {
+        image.src = url;
+        if (image.complete || image.readyState == "complete" || image.readyState == 4) {
+            image.onload();
+        }
+    }, 1);
 
     slide.querySelector('.name').innerText = [user.name.title.ucfirst(), user.name.first.ucfirst(), user.name.last.ucfirst()].join(' ');
     link = slide.querySelector('.email');
