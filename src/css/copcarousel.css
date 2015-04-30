@@ -19,7 +19,7 @@
 }
 
 .cop-carousel,
-.cop-carousel * {
+.cop-carousel > * {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
