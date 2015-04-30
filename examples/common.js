@@ -87,11 +87,15 @@ function slideRender(slide, data) {
     image = slide.querySelector('img');
     image.style.visibility = 'hidden';
     image.style.maxHeight = (image.getBoundingClientRect().height || image.offsetHeight) + 'px';
+    //image from browser cache issue
+    image.src = '';
+    image['data-loaded'] = false;
     image.onload = function () {
+        if (image['data-loaded']) return;
+        image['data-loaded'] = true;
         image.style.visibility = '';
         image.style.maxHeight = '';
     }
-    //IE9 hack to fire onload
     setTimeout(function () {
         image.src = url;
         if (image.complete || image.readyState == "complete" || image.readyState == 4) {
