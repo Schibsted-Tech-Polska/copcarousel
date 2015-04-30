@@ -3,8 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <base href="/stp.copcarousel/">
-    <title>COP Carousel demo</title>
+    <script>
+        document.write('<base href="'+window.location.href.substr(0, window.location.href.indexOf(window.location.pathname.split('/')[2]))+'">');
+    </script>    <title>COP Carousel demo</title>
     <link type="text/css" rel="stylesheet" href="dist/css/copcarousel.min.css">
     <link type="text/css" rel="stylesheet" href="examples/common.css">
     <link type="text/css" rel="stylesheet" href="examples/single/style.css">

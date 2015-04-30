@@ -91,6 +91,6 @@ body {
 }
 
 .controls .pagination li {
-    display: inherit;
+    display: list-item;
     margin: 10px 0;
 }
