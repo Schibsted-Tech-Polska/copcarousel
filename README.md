@@ -92,3 +92,6 @@ That is just a really basic setup. There are no controls included, but they can 
 **callback** (*function()*; default: `null`) - called right after carousel movement; useful for updating pagination
 
 **disableScroll** (*bool*; default: `false`) - disable page scrolling with touch if the touchstart event was called on carousel
+
+## Demos
+Some examples: [click](http://tomaszlukasik.github.io/stp.copcarousel/ "examples").
