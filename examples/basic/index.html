@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <base href="/stp.copcarousel/">
+    <title>COP Carousel demo</title>
+    <link type="text/css" rel="stylesheet" href="dist/css/copcarousel.min.css">
+    <link type="text/css" rel="stylesheet" href="examples/common.css">
+</head>
+<body>
+<h1>Basic setup</h1>
+<div id="carousel-wrap" class="box">
+    <div id="carousel" class="cop-carousel-container">
+        <div class="cop-carousel">
+            <div class="brick">
+                <div class="brick-content">
+                    <img/>
+
+                    <div class="bottom">
+                        <div class="name"></div>
+                        <a class="email"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="arrows">
+            <a class="arrow prev" onclick="carousel.prev()">&#10094;</a>
+            <a class="arrow next" onclick="carousel.next()">&#10095;</a>
+        </div>
+        <ul class="pagination"></ul>
+    </div>
+</div>
+<div class="box">
+    <ul>
+        <li>custom settings:
+            <pre>
+carouselConf = {
+    autoStart: true,
+    plugData: {
+        "user": {...}
+    },
+    slidesData: [],
+    slideRender: slideRender,
+    setupCallback: renderPagination,
+    callback: updatePagination,
+    itemsCustom: [
+        [0, 1],
+        [480, 2],
+        [768, 3],
+        [1024, 4]
+    ]
+};
+            </pre>
+        </li>
+        <li>custom CSS files: <a href="examples/common.css">examples/common.css</a></li>
+        <li>custom JS files: <a href="examples/basic/example.js">examples/basic/example.js</a>, <a href="examples/common.js">examples/common.js</a></li>
+    </ul>
+</div>
+<script type="text/javascript" src="dist/js/copcarousel.min.js"></script>
+<script type="text/javascript" src="examples/basic/example.js"></script>
+<script type="text/javascript" src="examples/common.js"></script>
+</body>
+</html>

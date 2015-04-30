@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <base href="/stp.copcarousel/">
+    <title>COP Carousel demo</title>
+    <link type="text/css" rel="stylesheet" href="dist/css/copcarousel.min.css">
+    <link type="text/css" rel="stylesheet" href="examples/common.css">
+    <link type="text/css" rel="stylesheet" href="examples/single/style.css">
+</head>
+<body>
+<h1>Single slide & string template</h1>
+
+<div id="carousel-wrap" class="box">
+    <div id="carousel" class="cop-carousel-container">
+        <div class="cop-carousel">
+        </div>
+    </div>
+    <div class="controls">
+        <div class="arrows">
+            <a class="arrow prev" onclick="carousel.prev()">&#10094;</a>
+            <a class="arrow next" onclick="carousel.next()">&#10095;</a>
+        </div>
+        <ul class="pagination"></ul>
+    </div>
+</div>
+<div class="box">
+    <ul>
+        <li>custom settings:
+            <pre>
+carouselConf = {
+    autoStart: true,
+    plugData: {
+        "user": {...}
+    },
+    slidesData: [],
+    slideRender: slideRender,
+    setupCallback: renderPagination,
+    callback: updatePagination,
+    <strong>itemsCustom: [
+            [0, 1]
+        ]</strong>,
+    <strong>template: '&lt;div class="brick"&gt;&lt;div class="brick-content"&gt;&lt;img/&gt;&lt;div class="bottom"&gt;&lt;div class="name"&gt;&lt;/div&gt;&lt;a class="email"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;\'</strong>
+};
+            </pre>
+        </li>
+        <li>custom CSS files: <a href="examples/common.css">examples/common.css</a>, <a
+                href="examples/single/style.css">examples/single/style.css</a></li>
+        <li>custom JS files: <a href="examples/single/example.js">examples/single/example.js</a>, <a
+                href="examples/common.js">examples/common.js</a></li>
+    </ul>
+</div>
+<script type="text/javascript" src="dist/js/copcarousel.min.js"></script>
+<script type="text/javascript" src="examples/single/example.js"></script>
+<script type="text/javascript" src="examples/common.js"></script>
+</body>
+</html>

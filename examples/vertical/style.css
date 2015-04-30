@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 10px;
+}
+
+#carousel-wrap {
+    height: 50%;
+    max-width: 50%;
+    overflow: hidden;
+    padding: 40px 20px 40px 30px;
+}
+
+.cop-carousel-container {
+    height: 100%;
+}
+
+.cop-carousel > * {
+    float: none;
+}
+
+.brick {
+    padding: 3px;
+}
+
+.brick-content {
+    height: 100%;
+    background-color: #fff;
+}
+
+.brick-content img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.brick-content .bottom {
+    position: absolute;
+    height: 100%;
+    text-align: right;
+    background: none;
+    padding: 0;
+}
+
+.brick-content .bottom > * {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.brick-content .bottom a {
+    bottom: 0;
+    max-width: 100%;
+}
+
+.controls {
+    text-align: center;
+}
+
+.controls a.arrow {
+    transform: translateX(-50%);
+}
+
+.controls a.arrow:after {
+    content: "\25BE";
+}
+
+.controls a.arrow.prev {
+    top: 0;
+    left: 50%;
+    transform: rotate(180deg);
+}
+
+.controls a.arrow.next {
+    bottom: 0px;
+    left: 50%;
+    top: inherit;
+    right: inherit;
+}
+
+.controls .pagination {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.controls .pagination li {
+    display: inherit;
+    margin: 10px 0;
+}

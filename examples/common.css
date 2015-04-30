@@ -1,0 +1,119 @@
+.box {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #999;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px auto;
+}
+
+#carousel-wrap {
+    padding: 20px 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.brick {
+    padding: 10px 5px;
+}
+
+.brick-content {
+    position: relative;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.brick-content img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.brick-content .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.brick-content .bottom * {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.brick-content .bottom a {
+    display: block;
+    font-size: 18px;
+}
+
+.controls {
+    text-align: center;
+}
+
+.controls a {
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.controls a:hover {
+    color: #000;
+}
+
+.controls a.arrow {
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+}
+
+.controls a.arrow.prev {
+    left: 20px;
+}
+
+.controls a.arrow.next {
+    right: 20px;
+}
+
+.controls .pagination {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #999;
+    display: inline-block;
+}
+
+.controls .pagination:after {
+    content: "";
+    clear: both;
+}
+
+.controls .pagination li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.controls .pagination li a {
+    background-color: #999;
+    border-radius: 100%;
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
+.controls .pagination li a:hover {
+    background-color: #000;
+}
+.controls .pagination li.active a {
+    background-color: green;
+}
+
+pre {
+    white-space: pre-wrap;
+}
