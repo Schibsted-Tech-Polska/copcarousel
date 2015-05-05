@@ -573,6 +573,10 @@ function CopCarousel(container, options) {
             stop();
             slide(to, speed);
         },
+        move: function (steps) {
+            stop();
+            move(steps);
+        },
         prev: function () {
             stop();
             move(-1);
@@ -606,6 +610,9 @@ function CopCarousel(container, options) {
             translate(0, 0);
             if (browser.addEventListener) {
                 wrapper.removeEventListener(browser.transitionEnd, events, false);
+                wrapper.removeEventListener('touchstart', events, false);
+                wrapper.removeEventListener('touchmove', events, false);
+                wrapper.removeEventListener('touchend', events, false);
                 window.removeEventListener('resize', events, false);
             } else {
                 window.onresize = null;
@@ -613,4 +620,3 @@ function CopCarousel(container, options) {
         }
     }
 }
-
