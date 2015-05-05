@@ -8,6 +8,12 @@
     <base>
 </head>
 <body>
+<div class="box" style="min-height:180px;">
+    <img src="logo.png" alt="CopCarousel logo" width="150px" align="left" style="margin-right: 10px">
+    <h1>Lightweight carousel with touch support and no dependencies</h1>
+    <p>This is the demo page.</p>
+    <p>If you're looking for some documentation, you should check out the project repo at GitHub (<a href="//github.com/tomaszlukasik/stp.copcarousel">CopCarousel</a>).</p>
+</div>
 <div class="box">
     <h2>Available demos:</h2>
     <ol>
@@ -23,6 +29,26 @@
         <li>Common stylsheet with small modification per each: <a href="examples/common.css">examples/common.css</a></li>
         <li>Common JS with small modification per each: <a href="examples/common.js">examples/common.js</a></li>
     </ul>
+</div>
+<div class="box">
+    <h2>Minimized versions:</h2>
+    <p>In our team we use minimized versions of all our CopCarousel based carousels. To concat, minimize JS/CSS and then include in HTML we use <a href="//gruntjs.com">GruntJS</a>. You can check our script here: <a href="Gruntfile.js">Gruntfile.js</a>.</p>
+    <p> To run grunt you need <a href="//nodejs.org">NodeJS</a>. Then all you need to do is run these commands:</p>
+    <code>
+        $ npm install -g grunt-cli
+        <br>
+        $ npm install
+        <br>
+        $ grunt
+    </code>
+    <hr>
+    Here are the demos after minification using grunt script:
+    <ol>
+        <li><a href="build/basic"><h3>Basic setup</h3></a></li>
+        <li><a href="build/few"><h3>Filled with plug</h3></a></li>
+        <li><a href="build/single"><h3>Single slide & string template</h3></a></li>
+        <li><a href="build/vertical"><h3>Vertical</h3></a></li>
+    </ol>
 </div>
 </body>
 </html>

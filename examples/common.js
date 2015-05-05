@@ -37,7 +37,7 @@ if (typeof String.prototype.ucfirst !== 'function') {
 var count = count || 15,
     dataUrl = "http://api.randomuser.me?results=" + count,
     carouselConf = {
-        autoStart: false,
+        autoStart: true,
         itemsCustom: [
             [0, 1],
             [480, 2],

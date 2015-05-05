@@ -7,8 +7,10 @@
         document.write('<base href="'+window.location.href.substr(0, window.location.href.indexOf(window.location.pathname.split('/')[2]))+'">');
     </script>
     <title>COP Carousel demo</title>
+    <!-- build:css css/style.min.css -->
     <link type="text/css" rel="stylesheet" href="dist/css/copcarousel.min.css">
     <link type="text/css" rel="stylesheet" href="examples/common.css">
+    <!-- endbuild -->
 </head>
 <body>
 <h1>Basic setup</h1>
@@ -38,7 +40,7 @@
 <div class="box">
     <ul>
         <li>custom settings:
-            <pre>
+<pre>
 carouselConf = {
     autoStart: true,
     plugData: {
@@ -55,14 +57,16 @@ carouselConf = {
         [1024, 4]
     ]
 };
-            </pre>
+</pre>
         </li>
         <li>custom CSS files: <a href="examples/common.css">examples/common.css</a></li>
         <li>custom JS files: <a href="examples/basic/example.js">examples/basic/example.js</a>, <a href="examples/common.js">examples/common.js</a></li>
     </ul>
 </div>
+<!-- build:js js/script.min.js -->
 <script type="text/javascript" src="dist/js/copcarousel.min.js"></script>
 <script type="text/javascript" src="examples/basic/example.js"></script>
 <script type="text/javascript" src="examples/common.js"></script>
+<!-- endbuild -->
 </body>
 </html>
