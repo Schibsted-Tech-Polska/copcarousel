@@ -94,4 +94,4 @@ That is just a really basic setup. There are no controls included, but they can 
 **disableScroll** (*bool*; default: `false`) - disable page scrolling with touch if the touchstart event was called on carousel
 
 ## Demos
-Some examples: [click](http://tomaszlukasik.github.io/stp.copcarousel/ "examples").
+Some examples: [click](http://schibsted-tech-polska.github.io/stp.copcarousel/ "examples").
