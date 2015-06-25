@@ -11,3 +11,5 @@ Thumbs.db
 # PHP Storm files #
 ######################
 .idea
+
+node_modules
