@@ -64,7 +64,7 @@ var count = count || 15,
                 "SSN": "000-00-0000",
                 "picture": {
                     "large": "examples/img/plug.png",
-                    "medium": "examples/img/plug-mid.png",
+                    "medium": "examples/img/plug-med.png",
                     "thumbnail": "examples/img/plug-thumb.png"
                 }
             }
