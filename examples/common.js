@@ -103,9 +103,9 @@ function slideRender(slide, data) {
         }
     }, 1);
 
-    slide.querySelector('.name').innerText = [user.name.title.ucfirst(), user.name.first.ucfirst(), user.name.last.ucfirst()].join(' ');
+    slide.querySelector('.name').innerHTML = [user.name.title.ucfirst(), user.name.first.ucfirst(), user.name.last.ucfirst()].join(' ');
     link = slide.querySelector('.email');
-    link.title = link.innerText = user.email;
+    link.title = link.innerHTML = user.email;
     link.href = "mailto:" + user.email;
 }
 

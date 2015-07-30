@@ -52,7 +52,7 @@ var slidesData = [{
 
 function slideRender(slide, data) {
     slide.querySelector('img').src = data.url;
-    slide.querySelector('.text').innerText = data.text;
+    slide.querySelector('.text').innerHTML = data.text;
 }
 ```
 
